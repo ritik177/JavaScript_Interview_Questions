@@ -681,22 +681,22 @@ You can download the PDF and Epub version of this repository from the latest run
 
   **Syntax:**
    ```javascript
-   array.slice(start, end);
+      array.slice(start, end);
    ```
-  `start` (optional): The index to start slicing from (inclusive). Default is `(0)`.
+     `start` (optional): The index to start slicing from (inclusive). Default is `(0)`.
 
-  `end` (optional): The index to end slicing at (exclusive). Default is the array length.
+     `end` (optional): The index to end slicing at (exclusive). Default is the array length.
 
    ```javascript
-   let fruits = ["apple", "banana", "cherry", "date", "fig"];
-   let sliced = fruits.slice(1, 4);
-   console.log(sliced); // ["banana", "cherry", "date"]
-   console.log(fruits); // ["apple", "banana", "cherry", "date", "fig"]
+      let fruits = ["apple", "banana", "cherry", "date", "fig"];
+      let sliced = fruits.slice(1, 4);
+      console.log(sliced); // ["banana", "cherry", "date"]
+      console.log(fruits); // ["apple", "banana", "cherry", "date", "fig"]
 
-   let arrayIntegers = [1, 2, 3, 4, 5];
-   let arrayIntegers1 = arrayIntegers.slice(0, 2); // returns [1,2]
-   let arrayIntegers2 = arrayIntegers.slice(2, 3); // returns [3]
-   let arrayIntegers3 = arrayIntegers.slice(4); //returns [5]
+      let arrayIntegers = [1, 2, 3, 4, 5];
+      let arrayIntegers1 = arrayIntegers.slice(0, 2); // returns [1,2]
+      let arrayIntegers2 = arrayIntegers.slice(2, 3); // returns [3]
+      let arrayIntegers3 = arrayIntegers.slice(4); //returns [5]
    ```
 
    **Note:** Slice method won't mutate the original array but it returns the subset as a new array.
@@ -712,7 +712,7 @@ You can download the PDF and Epub version of this repository from the latest run
    Some of the examples of this method are,
   **Syntax:**
    ```javascript
-   array.splice(start, deleteCount, item1, item2, ...);
+      array.splice(start, deleteCount, item1, item2, ...);
    ```
   `start`: The index where changes should begin.
 
@@ -720,25 +720,25 @@ You can download the PDF and Epub version of this repository from the latest run
   `item1, item2, ... (optional)`: Items to be added at the start index.
 
    ```javascript
-   let arrayIntegersOriginal1 = [1, 2, 3, 4, 5];
-   let arrayIntegersOriginal2 = [1, 2, 3, 4, 5];
-   let arrayIntegersOriginal3 = [1, 2, 3, 4, 5];
+     let arrayIntegersOriginal1 = [1, 2, 3, 4, 5];
+     let arrayIntegersOriginal2 = [1, 2, 3, 4, 5];
+     let arrayIntegersOriginal3 = [1, 2, 3, 4, 5];
 
-   let arrayIntegers1 = arrayIntegersOriginal1.splice(0, 2); // returns [1, 2]; original array: [3, 4, 5]
-   let arrayIntegers2 = arrayIntegersOriginal2.splice(3); // returns [4, 5]; original array: [1, 2, 3]
-   let arrayIntegers3 = arrayIntegersOriginal3.splice(3, 1, "a", "b", "c"); //returns [4]; original array: [1, 2, 3, "a", "b", "c", 5]
+      let arrayIntegers1 = arrayIntegersOriginal1.splice(0, 2); // returns [1, 2]; original array: [3, 4, 5]
+      let arrayIntegers2 = arrayIntegersOriginal2.splice(3); // returns [4, 5]; original array: [1, 2, 3]
+      let arrayIntegers3 = arrayIntegersOriginal3.splice(3, 1, "a", "b", "c"); //returns [4]; original array: [1, 2, 3, "a", "b", "c", 5]
    ```
    **Example 1: Removing Elements:**
    ```javascript
-   let fruits = ["apple", "banana", "cherry", "date", "fig"];
-   let removed = fruits.splice(1, 2);
+      let fruits = ["apple", "banana", "cherry", "date", "fig"];
+      let removed = fruits.splice(1, 2);
 
    console.log(removed); // ["banana", "cherry"]
    console.log(fruits);  // ["apple", "date", "fig"]
    ```
    **Example 2: Adding Elements**
    ```javascript
-   let fruits = ["apple", "date", "fig"];
+      let fruits = ["apple", "date", "fig"];
    fruits.splice(1, 0, "banana", "cherry");
 
    console.log(fruits); // ["apple", "banana", "cherry", "date", "fig"]
@@ -746,7 +746,7 @@ You can download the PDF and Epub version of this repository from the latest run
    ```
    **Example 3: Replacing Elements**
    ```javascript
-   let fruits = ["apple", "banana", "cherry", "date", "fig"];
+      let fruits = ["apple", "banana", "cherry", "date", "fig"];
    fruits.splice(1, 2, "grape");
 
    console.log(fruits); // ["apple", "grape", "date", "fig"]
