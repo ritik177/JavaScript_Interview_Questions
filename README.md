@@ -10013,5 +10013,5 @@ The questions provided in this repository are the summary of frequently asked qu
 
 Good luck with your interview 😊
 
-**(Credit:)** [Mohamed-Hashem](https://github.com/Mohamed-Hashem/javascript-interview-questions?tab=readme-ov-file#what-are-closures)
+**Credit:** [Mohamed-Hashem](https://github.com/Mohamed-Hashem/javascript-interview-questions?tab=readme-ov-file#what-are-closures)
 ---
