@@ -674,12 +674,14 @@ You can download the PDF and Epub version of this repository from the latest run
 5. ### What is the purpose of the array slice method
 
    The **slice()** method returns the selected elements in an array as a new array object. It selects the elements starting at the given start argument, and ends at the given optional end argument without including the last element. If you omit the second argument then it selects till the end.
+
   `slice does not modify the original array.`
 
    Some of the examples of this method are,
+
   **Syntax:**
    ```javascript
-    array.slice(start, end);
+   array.slice(start, end);
    ```
   `start` (optional): The index to start slicing from (inclusive). Default is `(0)`.
 
