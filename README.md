@@ -675,11 +675,11 @@ You can download the PDF and Epub version of this repository from the latest run
 
    The **slice()** method returns the selected elements in an array as a new array object. It selects the elements starting at the given start argument, and ends at the given optional end argument without including the last element. If you omit the second argument then it selects till the end.
 
-  `slice does not modify the original array.`
+   `slice does not modify the original array.`
 
    Some of the examples of this method are,
 
-  **Syntax:**
+   **Syntax:**
    ```javascript
       array.slice(start, end);
    ```
@@ -710,14 +710,14 @@ You can download the PDF and Epub version of this repository from the latest run
    The `splice()` method is used to add, remove, or replace elements in an array. Unlike `slice`, it modifies the original array.
 
    Some of the examples of this method are,
-  **Syntax:**
+   **Syntax:**
    ```javascript
       array.splice(start, deleteCount, item1, item2, ...);
    ```
-  `start`: The index where changes should begin.
+   `start`: The index where changes should begin.
 
-  `deleteCount`: The number of elements to remove from the array.
-  `item1, item2, ... (optional)`: Items to be added at the start index.
+   `deleteCount`: The number of elements to remove from the array.
+   `item1, item2, ... (optional)`: Items to be added at the start index.
 
    ```javascript
      let arrayIntegersOriginal1 = [1, 2, 3, 4, 5];
