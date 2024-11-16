@@ -720,9 +720,9 @@ You can download the PDF and Epub version of this repository from the latest run
    `item1, item2, ... (optional)`: Items to be added at the start index.
 
    ```javascript
-     let arrayIntegersOriginal1 = [1, 2, 3, 4, 5];
-     let arrayIntegersOriginal2 = [1, 2, 3, 4, 5];
-     let arrayIntegersOriginal3 = [1, 2, 3, 4, 5];
+      let arrayIntegersOriginal1 = [1, 2, 3, 4, 5];
+      let arrayIntegersOriginal2 = [1, 2, 3, 4, 5];
+      let arrayIntegersOriginal3 = [1, 2, 3, 4, 5];
 
       let arrayIntegers1 = arrayIntegersOriginal1.splice(0, 2); // returns [1, 2]; original array: [3, 4, 5]
       let arrayIntegers2 = arrayIntegersOriginal2.splice(3); // returns [4, 5]; original array: [1, 2, 3]
@@ -733,23 +733,23 @@ You can download the PDF and Epub version of this repository from the latest run
       let fruits = ["apple", "banana", "cherry", "date", "fig"];
       let removed = fruits.splice(1, 2);
 
-   console.log(removed); // ["banana", "cherry"]
-   console.log(fruits);  // ["apple", "date", "fig"]
+      console.log(removed); // ["banana", "cherry"]
+      console.log(fruits);  // ["apple", "date", "fig"]
    ```
    **Example 2: Adding Elements**
    ```javascript
       let fruits = ["apple", "date", "fig"];
-   fruits.splice(1, 0, "banana", "cherry");
+      fruits.splice(1, 0, "banana", "cherry");
 
-   console.log(fruits); // ["apple", "banana", "cherry", "date", "fig"]
+      console.log(fruits); // ["apple", "banana", "cherry", "date", "fig"]
 
    ```
    **Example 3: Replacing Elements**
    ```javascript
       let fruits = ["apple", "banana", "cherry", "date", "fig"];
-   fruits.splice(1, 2, "grape");
+      fruits.splice(1, 2, "grape");
 
-   console.log(fruits); // ["apple", "grape", "date", "fig"]
+      console.log(fruits); // ["apple", "grape", "date", "fig"]
  
    ```
 
