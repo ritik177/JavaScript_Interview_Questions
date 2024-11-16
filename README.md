@@ -674,10 +674,23 @@ You can download the PDF and Epub version of this repository from the latest run
 5. ### What is the purpose of the array slice method
 
    The **slice()** method returns the selected elements in an array as a new array object. It selects the elements starting at the given start argument, and ends at the given optional end argument without including the last element. If you omit the second argument then it selects till the end.
+  `slice does not modify the original array.`
 
    Some of the examples of this method are,
+  **Syntax:**
+   ```javascript
+    array.slice(start, end);
+   ```
+  `start` (optional): The index to start slicing from (inclusive). Default is `(0)`.
+
+  `end` (optional): The index to end slicing at (exclusive). Default is the array length.
 
    ```javascript
+   let fruits = ["apple", "banana", "cherry", "date", "fig"];
+   let sliced = fruits.slice(1, 4);
+   console.log(sliced); // ["banana", "cherry", "date"]
+   console.log(fruits); // ["apple", "banana", "cherry", "date", "fig"]
+
    let arrayIntegers = [1, 2, 3, 4, 5];
    let arrayIntegers1 = arrayIntegers.slice(0, 2); // returns [1,2]
    let arrayIntegers2 = arrayIntegers.slice(2, 3); // returns [3]
@@ -692,21 +705,19 @@ You can download the PDF and Epub version of this repository from the latest run
 
    The **splice()** method is used either adds/removes items to/from an array, and then returns the removed item. The first argument specifies the array position for insertion or deletion whereas the optional second argument indicates the number of elements to be deleted. Each additional argument is added to the array.
 
+   The `splice()` method is used to add, remove, or replace elements in an array. Unlike `slice`, it modifies the original array.
+
    Some of the examples of this method are,
-   **Syntax:**
+  **Syntax:**
    ```javascript
-    array.slice(start, end);
+   array.splice(start, deleteCount, item1, item2, ...);
    ```
-   `(start)` (optional): The index to start slicing from (inclusive). Default is `(0)`.
-   `(end)` (optional): The index to end slicing at (exclusive). Default is the array length.
+  `start`: The index where changes should begin.
+
+  `deleteCount`: The number of elements to remove from the array.
+  `item1, item2, ... (optional)`: Items to be added at the start index.
 
    ```javascript
-   let fruits = ["apple", "banana", "cherry", "date", "fig"];
-   let sliced = fruits.slice(1, 4);
-   console.log(sliced); // ["banana", "cherry", "date"]
-   console.log(fruits); // ["apple", "banana", "cherry", "date", "fig"]
-
-
    let arrayIntegersOriginal1 = [1, 2, 3, 4, 5];
    let arrayIntegersOriginal2 = [1, 2, 3, 4, 5];
    let arrayIntegersOriginal3 = [1, 2, 3, 4, 5];
@@ -715,6 +726,32 @@ You can download the PDF and Epub version of this repository from the latest run
    let arrayIntegers2 = arrayIntegersOriginal2.splice(3); // returns [4, 5]; original array: [1, 2, 3]
    let arrayIntegers3 = arrayIntegersOriginal3.splice(3, 1, "a", "b", "c"); //returns [4]; original array: [1, 2, 3, "a", "b", "c", 5]
    ```
+   **Example 1: Removing Elements:**
+   ```javascript
+   let fruits = ["apple", "banana", "cherry", "date", "fig"];
+   let removed = fruits.splice(1, 2);
+
+   console.log(removed); // ["banana", "cherry"]
+   console.log(fruits);  // ["apple", "date", "fig"]
+  ```
+     **Example 2: Adding Elements**
+   ```javascript
+   let fruits = ["apple", "date", "fig"];
+   fruits.splice(1, 0, "banana", "cherry");
+
+   console.log(fruits); // ["apple", "banana", "cherry", "date", "fig"]
+
+  ```
+     **Example 3: Replacing Elements**
+   ```javascript
+   let fruits = ["apple", "banana", "cherry", "date", "fig"];
+   fruits.splice(1, 2, "grape");
+
+   console.log(fruits); // ["apple", "grape", "date", "fig"]
+
+  ```
+
+
 
    **Note:** Splice method modifies the original array and returns the deleted array.
 
