@@ -735,7 +735,7 @@ You can download the PDF and Epub version of this repository from the latest run
 
    console.log(removed); // ["banana", "cherry"]
    console.log(fruits);  // ["apple", "date", "fig"]
-  ```
+   ```
      **Example 2: Adding Elements**
    ```javascript
    let fruits = ["apple", "date", "fig"];
@@ -743,15 +743,15 @@ You can download the PDF and Epub version of this repository from the latest run
 
    console.log(fruits); // ["apple", "banana", "cherry", "date", "fig"]
 
-  ```
+   ```
      **Example 3: Replacing Elements**
    ```javascript
    let fruits = ["apple", "banana", "cherry", "date", "fig"];
    fruits.splice(1, 2, "grape");
 
    console.log(fruits); // ["apple", "grape", "date", "fig"]
-
-  ```
+ 
+   ```
 
 
 
