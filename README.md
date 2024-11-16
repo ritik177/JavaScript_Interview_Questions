@@ -693,8 +693,20 @@ You can download the PDF and Epub version of this repository from the latest run
    The **splice()** method is used either adds/removes items to/from an array, and then returns the removed item. The first argument specifies the array position for insertion or deletion whereas the optional second argument indicates the number of elements to be deleted. Each additional argument is added to the array.
 
    Some of the examples of this method are,
+   **Syntax:**
+   ```javascript
+    array.slice(start, end);
+   ```
+   `(start)` (optional): The index to start slicing from (inclusive). Default is `(0)`.
+   `(end)` (optional): The index to end slicing at (exclusive). Default is the array length.
 
    ```javascript
+   let fruits = ["apple", "banana", "cherry", "date", "fig"];
+   let sliced = fruits.slice(1, 4);
+   console.log(sliced); // ["banana", "cherry", "date"]
+   console.log(fruits); // ["apple", "banana", "cherry", "date", "fig"]
+
+
    let arrayIntegersOriginal1 = [1, 2, 3, 4, 5];
    let arrayIntegersOriginal2 = [1, 2, 3, 4, 5];
    let arrayIntegersOriginal3 = [1, 2, 3, 4, 5];
